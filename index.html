@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eindhoven Airport - find airplanes!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/flights.css">
+    <script src="/js/flights.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper" ng-app="aviademoApp">
+<div class="container">
+    <div class="row">
+    <!-- 
+        flightCarousel 
+        Probably possible without jquery but I do not care right now, this is a simple demo
+    -->
+    <div id="flightCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="7000">
+    <!-- 
+        Indicators - commented out, I don't need 'em 
+    -->
+    <!-- ol class="carousel-indicators">
+        <li data-target="#flightCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#flightCarousel" data-slide-to="1"></li>            
+        <li data-target="#flightCarousel" data-slide-to="2"></li>    
+        <li data-target="#flightCarousel" data-slide-to="3"></li>            
+        <li data-target="#flightCarousel" data-slide-to="4"></li>            
+    </ol -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="/img/carousel/IMG_7599_800.jpg" alt="Airport" class="img-responsive">
+        <div class="carousel-caption">
+            <h1 class="shadow">Welcome to Aviademo!</h1>
+        </div>
+      </div>
+
+    <div class="item">
+        <img src="/img/carousel/IMG_7600_800.jpg" alt="Airport" class="img-responsive">
+        <div class="carousel-caption">
+            <h1 class="shadow">Welcome to Aviademo!</h1>
+        </div>
+    </div>
+    
+    <div class="item">
+        <img src="/img/carousel/IMG_7613_800.jpg" alt="Airport" class="img-responsive">
+        <div class="carousel-caption">
+            <h1 class="shadow">Welcome to Aviademo!</h1>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="/img/carousel/IMG_7616_800.jpg" alt="Airport" class="img-responsive">
+        <div class="carousel-caption">
+            <h1 class="shadow">Welcome to Aviademo!</h1>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="/img/carousel/IMG_7619_800.jpg" alt="Airport" class="img-responsive">
+        <div class="carousel-caption">
+            <h1 class="shadow">Welcome to Aviademo!</h1>
+        </div>
+    </div>
+
+
+    <!-- 
+        Left and right controls - commented out, I don't need 'em
+    -->
+    <!-- a class="left carousel-control" href="#flightCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#flightCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a -->
+    </div>
+    </div> <!-- End flightCarousel -->
+</div>
+
+    <div class="row">
+        <br>
+        Here you can find some cool airplanes stuff. Check it out!
+    </div>
+    <div class="row">
+        <br>
+        <ul>    
+            <li><a href="demo1.html">Eindhoven airport photospotting.</a> Featuring AngularJS and Bootstrap with some jQuery (in progress).</li>
+            <li><a href="demo2.html">A small CRUD application.</a>Featuring AngularJS, Bootstrap and Yuri Gagarin!.</li>
+        </ul>    
+    </div>
+    
+</div> <!-- end Container -->
+</div> <!-- end Wrapper -->
+
+
+</body>
+</html>

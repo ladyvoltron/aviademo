@@ -1,0 +1,32 @@
+    
+    <div class="row"
+         ng-controller="allPlanes">
+        
+        <h2> Your airplanes</h2>        
+        
+        <table class="table table-hover">
+        <thead>
+        <tr>
+        <th>Registration id</th>
+        <th>Type</th>
+        <th>Company</th>
+        <th></th>
+        <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="planeRecord in planesData">
+            <!-- td><a href="#/demo2-2?id={{planeRecord.id}}">{{planeRecord.regnr}}</a></td -->
+            <td><a ui-sref="plane_info({id: '{{planeRecord.id}}'})">{{planeRecord.regnr}}</a></td>
+            <td>{{planeRecord.airt_name}}</td>
+            <td><img src="/img/logos/{{planeRecord.airl_icao_code | uppercase }}.gif" alt="{{planeRecord.airl_name}}" width="150"></td>
+            <td><a ui-sref="plane_edit({id: '{{planeRecord.id}}'})">Edit</a></td>
+            <td>Delete</td>
+        </tr>            
+        </tbody>
+        </table>
+<!--        
+        {{planesData}}
+-->
+    </div>
+    

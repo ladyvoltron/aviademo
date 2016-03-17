@@ -1,0 +1,41 @@
+    
+    <div class="row"
+         ng-controller="yourPlane">
+        
+        <h2> Your airplane</h2>        
+
+            <b>Registration number</b> 
+            <br>
+            {{planeData[0].regnr}}
+            <br>
+            <b>Aircraft type:</b> 
+            <br>
+            {{planeData[0].airt_name}}
+            <br>
+            <div ng-if="showName==1">
+            <b>Aircraft name:</b> 
+            <br>
+            {{planeData[0].airc_name}}
+            <br>
+            </div>
+            <b>Airline company:</b> 
+            <br>
+            {{planeData[0].airl_name}}
+            <br>
+            <img src="/img/logos/{{planeData[0].airl_icao_code | uppercase }}.gif" alt="{{planeData[0].airl_name}}" width="150">
+            <br>
+            <div ng-if="showMemo==1">
+            <b>Interesting facts:</b> 
+            <br>
+            {{planeData[0].airc_memo}}
+            <br>
+            </div>
+            <br>
+            <div>
+                <a href="http://www.flightradar24.com/data/airplanes/{{planeData[0].regnr}}" target="_blank">See the airplane fiight history on Flightradar</a>
+            </div>
+<!-- 
+        {{planeData}} 
+-->
+    </div>
+    

@@ -1,0 +1,42 @@
+    
+    <div class="row"
+         ng-controller="yourPlane">
+        
+        <h2> Edit your airplane data</h2>        
+
+        <form novalidate>
+            <div class="form-group">
+                <b>Registration number</b> 
+                <br>
+                <input class="form-control" type="text" ng-model="planeData[0].regnr" disabled><br>
+            </div>
+            <b>Aircraft type:</b> 
+            <br>
+            <input type="text" class="form-control" ng-model="planeData[0].airt_name" disabled><br>
+            <div class="form-group">
+                <b>Aircraft name:</b> 
+                <br>
+                <input type="text" class="form-control" ng-model="planeData[0].airc_name"><br>
+            </div>
+            <div class="form-group">
+                <b>Airline company:</b> 
+                <br>
+                {{planeData[0].airl_name}}
+                <br>
+                <img src="/img/logos/{{planeData[0].airl_icao_code | uppercase }}.gif" alt="{{planeData[0].airl_name}}" width="150">
+            </div>
+            <div class="form-group">
+                <b>Interesting facts:</b> 
+                <br>
+                <textarea class="form-control" cols="40" rows="5" ng-model="planeData[0].airc_memo"></textarea>
+            </div>
+            
+            <button class="btn btn-primary">Save</button>
+
+        </form>
+        
+<!-- 
+        {{planeData}} 
+-->
+    </div>
+    
